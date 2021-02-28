@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% for Uygulama  in Uygulamas %}
+        {{ Uygulama.id }}<br>
+        <a href="/Uygulama/">{{ Uygulama }}{{ Uygulama.id}}</a><br>
+        {{ Uygulama.name_surname }}<br>
+        {{ Uygulama.birt_date}}<br>
+        {{ Uygulama.id_nummer }}<br>
+        {{ Uygulama.gender }}<br>
+        {{ Uygulama.school}}<br>
+
+    {% endfor %}
+</body>
+</html>
